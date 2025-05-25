@@ -1,10 +1,10 @@
+console.log(window.innerWidth);
+
 const hero = document.querySelector(".hero-section");
 const slides = document.querySelectorAll(".hero-slide");
 const leftArrows = document.querySelectorAll(".hero-left-arr");
 const rightArrows = document.querySelectorAll(".hero-right-arr");
-const trendingSlides = document.querySelectorAll(".trending-slide");
-const trendingSlide1 = document.querySelectorAll(".trending-slide-one");
-const trendingSlide2 = document.querySelectorAll(".trending-slide-two");
+const trendingSlides = document.querySelector(".trending-slide");
 const trendingLeft = document.querySelector(".trending-left-arr");
 const trendingRight = document.querySelector(".trending-right-arr");
 const pause = document.querySelector(".pause-icon");
@@ -96,16 +96,16 @@ pause.addEventListener("click", () => {
 showSlide(currentSlide);
 animateProgress();
 trendingRight.addEventListener("click", () => {
-  trendingSlides.forEach((slide) => {
-    slide.style.transform = `translateX(-${110}%)`;
-  });
+  if (window.innerWidth >= 1280 && window.innerWidth < 1920) {
+    trendingSlides.style.transform = `translateX(-${41}%)`;
+  } else {
+    trendingSlides.style.transform = `translateX(-${37}%)`;
+  }
   trendingLeft.classList.remove("hidden");
   trendingRight.classList.add("hidden");
 });
 trendingLeft.addEventListener("click", () => {
-  trendingSlides.forEach((slide) => {
-    slide.style.transform = `translateX(${0}%)`;
-  });
+  trendingSlides.style.transform = `translateX(${0}%)`;
   trendingLeft.classList.add("hidden");
   trendingRight.classList.remove("hidden");
 });

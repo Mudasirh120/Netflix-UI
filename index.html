@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="assets/images/logos/Netflix_Symbol_RGB.png" type="image/png" />
+  <link rel="shortcut icon" href="assets/images/logos/symbol.png" type="image/png" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/mediaQuery.css">
   <title>Netflix</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,10 +20,10 @@
     <header>
       <div class="header">
         <div class="logo">
-          <img src="assets/images/logos/Netflix_Logo_RGB.png" alt="Netflix logo" class="main-logo" />
+          <img src="assets/images/logos/wordmark.png" alt="Netflix logo" class="main-logo" />
         </div>
         <nav class="nav">
-          <a class="btn" href="#">Sign In</a>
+          <a class="btn sign-in-btn" href="#">Sign In</a>
         </nav>
       </div>
     </header>
@@ -29,24 +31,26 @@
       <section class="hero-section">
         <div class="hero-slide">
           <div class="hero landing-page">
-            <div class="hero-text">
-              <h1 class="hero-heading">
-                Unlimited movies, TV shows, and more.
-              </h1>
-              <p class="hero-tagline">Starts at RS 250. Cancel anytime.</p>
-              <p class="cta-text">
-                Ready to watch? Enter your email to create or restart your
-                membership.
-              </p>
-              <form action="" class="cta-form">
-                <input type="email" placeholder="Email address" id="email-input" class="form-input" required />
-                <a href="#" type="submit" class="form-btn"><span>Get Started</span>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </a>
-              </form>
-            </div>
             <div class="hero-left-arr slider-arrow">
               <ion-icon name="chevron-back-outline"></ion-icon>
+            </div>
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1 class="hero-heading">
+                  Unlimited movies, TV shows, and more.
+                </h1>
+                <p class="hero-tagline">Starts at RS 250. Cancel anytime.</p>
+                <p class="cta-text">
+                  Ready to watch? Enter your email to create or restart your
+                  membership.
+                </p>
+              </div>
+              <form action="" class="cta-form">
+                  <input type="email" placeholder="Email address" id="email-input" class="form-input" required />
+                  <a href="#" type="submit" class="form-btn"><span>Get Started</span>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </a>
+              </form>
             </div>
             <div class="hero-right-arr slider-arrow">
               <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -55,34 +59,36 @@
         </div>
         <div class="hero-slide">
           <div class="hero featured-movie">
-            <div class="featured-info">
-              <div class="featured-powered">
-                <img src="assets/images/featured/Film/netflix-film.webp" alt="" />
-              </div>
-              <div class="featured-title">
-                <img src="assets/images/featured/Film/featured-film-title.webp" alt="" />
-              </div>
-              <p class="featured-tags">
-                <span>2025</span>&bull;<span>16+</span>&bull;<span>Movie</span>&bull;<span>Action</span>
-              </p>
-              <p class="featured-desc">
-                In this high-octane battle of wits and wills, ingenious con
-                artist Rehan devises a diamond heist while trying to outsmart
-                Rajan, his sadistic adversary.
-              </p>
-              <p class="cta-text">
-                Ready to watch? Enter your email to create or restart your
-                membership.
-              </p>
-              <form action="" class="cta-form">
-                <input type="email" placeholder="Email address" id="email-input" class="form-input" required />
-                <a href="#" type="submit" class="form-btn"><span>Get Started</span>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </a>
-              </form>
-            </div>
             <div class="hero-left-arr slider-arrow">
               <ion-icon name="chevron-back-outline"></ion-icon>
+            </div>
+            <div class="hero-content">
+              <div class="featured-info">
+                <div class="featured-powered">
+                  <img src="assets/images/featured/Film/netflix-film.webp" alt="" />
+                </div>
+                <div class="featured-title">
+                  <img src="assets/images/featured/Film/featured-film-title.webp" alt="" />
+                </div>
+                <p class="featured-tags">
+                  <span>2025</span>&bull;<span>16+</span>&bull;<span>Movie</span>&bull;<span>Action</span>
+                </p>
+                <p class="featured-desc">
+                  In this high-octane battle of wits and wills, ingenious con
+                  artist Rehan devises a diamond heist while trying to outsmart
+                  Rajan, his sadistic adversary.
+                </p>
+                <p class="cta-text">
+                  Ready to watch? Enter your email to create or restart your
+                  membership.
+                </p>
+              </div>
+              <form action="" class="cta-form">
+                  <input type="email" placeholder="Email address" id="email-input" class="form-input" required />
+                  <a href="#" type="submit" class="form-btn"><span>Get Started</span>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </a>
+              </form>
             </div>
             <div class="hero-right-arr slider-arrow">
               <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -91,122 +97,109 @@
         </div>
         <div class="hero-slide">
           <div class="hero featured-series">
-            <div class="featured-info">
-              <div class="featured-powered">
-                <img src="assets/images/featured/Serie/netflix-serie.webp" alt="" />
-              </div>
-              <div class="featured-title">
-                <img src="assets/images/featured/Serie/featured-serie-title.webp" alt="" />
-              </div>
-              <p class="featured-tags">
-                <span>2025</span>&bull;<span>18+</span>&bull;<span>Show</span>&bull;<span>Thrillers</span>
-              </p>
-              <p class="featured-desc">
-                A dangerously charming, obsessive man goes to extreme measures to insert himself into the lives of women
-                who fascinate him.
-              </p>
-              <p class="cta-text">
-                Ready to watch? Enter your email to create or restart your
-                membership.
-              </p>
-              <form action="" class="cta-form">
-                <input type="email" placeholder="Email address" id="email-input" class="form-input" required />
-                <a href="#" type="submit" class="form-btn"><span>Get Started</span>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </a>
-              </form>
-            </div>
             <div class="hero-left-arr slider-arrow">
               <ion-icon name="chevron-back-outline"></ion-icon>
+            </div>
+            <div class="hero-content">
+              <div class="featured-info">
+                <div class="featured-powered">
+                  <img src="assets/images/featured/Serie/netflix-serie.webp" alt="" />
+                </div>
+                <div class="featured-title">
+                  <img src="assets/images/featured/Serie/featured-serie-title.webp" alt="" />
+                </div>
+                <p class="featured-tags">
+                  <span>2025</span>&bull;<span>18+</span>&bull;<span>Show</span>&bull;<span>Thrillers</span>
+                </p>
+                <p class="featured-desc">
+                  A dangerously charming, obsessive man goes to extreme measures to insert himself into the lives of
+                  women
+                  who fascinate him.
+                </p>
+                <p class="cta-text">
+                  Ready to watch? Enter your email to create or restart your
+                  membership.
+                </p>
+              </div>
+              <form action="" class="cta-form">
+                  <input type="email" placeholder="Email address" id="email-input" class="form-input" required />
+                  <a href="#" type="submit" class="form-btn"><span>Get Started</span>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </a>
+              </form>
             </div>
             <div class="hero-right-arr slider-arrow">
               <ion-icon name="chevron-forward-outline"></ion-icon>
             </div>
           </div>
         </div>
-        <!-- </div> -->
       </section>
-        <div class="auto-play">
-          <ion-icon name="pause" class="pause-icon"></ion-icon>
-          <span class="line-play line-1">
-            <span class="line-1-ani"></span>
-          </span>
-          <span class="line-play line-2">
-            <span class="line-2-ani"></span>
-          </span>
-          <span class="line-play line-3">
-            <span class="line-3-ani"></span>
-          </span>
-        </div>
+      <div class="auto-play">
+        <ion-icon name="pause" class="pause-icon"></ion-icon>
+        <span class="line-play line-1">
+          <span class="line-1-ani"></span>
+        </span>
+        <span class="line-play line-2">
+          <span class="line-2-ani"></span>
+        </span>
+        <span class="line-play line-3">
+          <span class="line-3-ani"></span>
+        </span>
+      </div>
       <section class="trending-section">
         <h2 class="trending-heading">Trending Now</h2>
-        <div class="trending-cards-box">
-          <div class="trending-slide trending-slide-one">
-            <div class="trending-card rank-one">
-              <h3 class="trending-rank">1</h3>
-              <img src="assets/images/trending/rank-1.webp" alt="">
-            </div>
-            <div class="trending-card rank-two">
-              <h3 class="trending-rank">2</h3>
-              <img src="assets/images/trending/rank-2.webp" alt="">
-            </div>
-            <div class="trending-card rank-three">
-              <h3 class="trending-rank">3</h3>
-              <img src="assets/images/trending/rank-3.webp" alt="">
-            </div>
-            <div class="trending-card rank-four">
-              <h3 class="trending-rank">4</h3>
-              <img src="assets/images/trending/rank-4.webp" alt="">
-            </div>
-            <div class="trending-card rank-five">
-              <h3 class="trending-rank">5</h3>
-              <img src="assets/images/trending/rank-5.webp" alt="">
-            </div>
-            <div class="trending-card rank-six">
-              <h3 class="trending-rank">6</h3>
-              <img src="assets/images/trending/rank-6.webp" alt="">
-            </div>
-            <div class="trending-card rank-seven">
-              <h3 class="trending-rank">7</h3>
-              <img src="assets/images/trending/rank-7.webp" alt="">
+        <div class="trending-slider">
+          <div class="slider-arrow trending-left-arr hidden">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+          </div>
+          <div class="trending-cards-box">
+            <div class="trending-slide">
+              <div class="trending-content">
+                <div class="trending-card rank-one">
+                  <h3 class="trending-rank">1</h3>
+                  <img src="assets/images/trending/rank-1.webp" alt="">
+                </div>
+                <div class="trending-card rank-two">
+                  <h3 class="trending-rank">2</h3>
+                  <img src="assets/images/trending/rank-2.webp" alt="">
+                </div>
+                <div class="trending-card rank-three">
+                  <h3 class="trending-rank">3</h3>
+                  <img src="assets/images/trending/rank-3.webp" alt="">
+                </div>
+                <div class="trending-card rank-four">
+                  <h3 class="trending-rank">4</h3>
+                  <img src="assets/images/trending/rank-4.webp" alt="">
+                </div>
+                <div class="trending-card rank-five">
+                  <h3 class="trending-rank">5</h3>
+                  <img src="assets/images/trending/rank-5.webp" alt="">
+                </div>
+                <div class="trending-card rank-six">
+                  <h3 class="trending-rank">6</h3>
+                  <img src="assets/images/trending/rank-6.webp" alt="">
+                </div>
+                <div class="trending-card rank-seven">
+                  <h3 class="trending-rank">7</h3>
+                  <img src="assets/images/trending/rank-7.webp" alt="">
+                </div>
+                <div class="trending-card rank-five">
+                    <h3 class="trending-rank">8</h3>
+                    <img src="assets/images/trending/rank-8.webp" alt="">
+                  </div>
+                  <div class="trending-card rank-six">
+                    <h3 class="trending-rank">9</h3>
+                    <img src="assets/images/trending/rank-9.webp" alt="">
+                  </div>
+                  <div class="trending-card rank-seven">
+                    <h3 class="trending-rank">10</h3>
+                    <img src="assets/images/trending/rank-10.webp" alt="">
+                  </div>
+              </div>  
             </div>
           </div>
-          <div class="slider-arrow trending-right-arr">
-            <ion-icon name="chevron-forward-outline"></ion-icon>
-          </div>
-          <div class="trending-slide trending-slide-two">
-            <div class="trending-card rank-five">
-              <h3 class="trending-rank">4</h3>
-              <img src="assets/images/trending/rank-4.webp" alt="">
-            </div>
-            <div class="trending-card rank-two">
-              <h3 class="trending-rank">5</h3>
-              <img src="assets/images/trending/rank-5.webp
-              " alt="">
-            </div>
-            <div class="trending-card rank-three">
-              <h3 class="trending-rank">6</h3>
-              <img src="assets/images/trending/rank-6.webp" alt="">
-            </div>
-            <div class="trending-card rank-four">
-              <h3 class="trending-rank">7</h3>
-              <img src="assets/images/trending/rank-7.webp" alt="">
-            </div>
-            <div class="trending-card rank-five">
-              <h3 class="trending-rank">8</h3>
-              <img src="assets/images/trending/rank-8.webp" alt="">
-            </div>
-            <div class="trending-card rank-six">
-              <h3 class="trending-rank">9</h3>
-              <img src="assets/images/trending/rank-9.webp" alt="">
-            </div>
-            <div class="trending-card rank-seven">
-              <h3 class="trending-rank">10</h3>
-              <img src="assets/images/trending/rank-10.webp" alt="">
-            </div>
-          </div>
-          <div class="slider-arrow trending-left-arr hidden ">
-            <ion-icon name="chevron-back-outline"></ion-icon>
+          <div class="slider-arrow trending-right-arr ">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
           </div>
         </div>
       </section>
@@ -215,10 +208,11 @@
         <div class="reasons-card-box">
           <div class="reasons-card">
             <h4 class="reasons-card-head">Enjoy on your TV</h4>
-            <p class="reasons-card-desc">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and
-            more.</p>
+            <p class="reasons-card-desc">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players,
+              and
+              more.</p>
             <div class="reasons-card-icon">
-            <img src="assets/images/icons/tv.png" alt="">
+              <img src="assets/images/icons/tv.png" alt="">
             </div>
           </div>
           <div class="reasons-card">
@@ -238,7 +232,7 @@
           <div class="reasons-card">
             <h4 class="reasons-card-head">Create profiles for kids</h4>
             <p class="reasons-card-desc">Send kids on adventures with their favorite characters in a space made just for
-            them — free with your membership.</p>
+              them — free with your membership.</p>
             <div class="reasons-card-icon">
               <img src="assets/images/icons/car.png" alt="">
             </div>
@@ -246,76 +240,79 @@
         </div>
       </section>
   </div>
-      <section class="faq-section">
-          <div class="faq-card-box">
-            <h2 class="faq-heading">Frequently Asked Questions</h2>
-            <div class="faq-card">
-              <div class="question">
-                <p class="question-text">What is Netflix?</p>
-                <p class="faq-plus faq-plus-1">+</p>
-              </div>
-              <div class="answer hidden ans1">
-              <p class="answer-text">
-                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
-                documentaries, and more on thousands of internet-connected devices.
-              </p>
-              <p class="answer-text">
-              You can watch as much as you want, whenever you want without a single commercial – all for one low monthly
-              price. There's always something new to discover and new TV shows and movies are added every week!
-              </p>
-            </div>
-          </div>
-        <div class="faq-card">
-          <div class="question">
-            <p class="question-text">How much does Netflix cost?</p>
-            <p class="faq-plus faq-plus-2">+</p>
-          </div>
-          <div class="answer hidden ans2">
-            <p class="answer-text">
-              Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly
-              fee. Plans range from Rs 250 to Rs 1,100 a month. No extra costs, no contracts.
-            </p>
-          </div>
+  <section class="faq-section">
+    <div class="faq-card-box">
+      <h2 class="faq-heading">Frequently Asked Questions</h2>
+      <div class="faq-card">
+        <div class="question">
+          <p class="question-text">What is Netflix?</p>
+          <p class="faq-plus faq-plus-1">+</p>
         </div>
-        <div class="faq-card">
-          <div class="question">
-            <p class="question-text">Where can I watch?</p>
-            <p class="faq-plus faq-plus-3">+</p>
-          </div>
-          <div class="answer hidden ans3">
-            <p class="answer-text">
-              Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
-            </p>
-            <p class="answer-text">
-              You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
-            </p>
-          </div>
+        <div class="answer hidden ans1">
+          <p class="answer-text">
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+            documentaries, and more on thousands of internet-connected devices.
+          </p>
+          <p class="answer-text">
+            You can watch as much as you want, whenever you want without a single commercial – all for one low monthly
+            price. There's always something new to discover and new TV shows and movies are added every week!
+          </p>
         </div>
-        <div class="faq-card">
-          <div class="question">
-            <p class="question-text">How do I cancel?</p>
-            <p class="faq-plus faq-plus-4">+</p>
-          </div>
-          <div class="answer hidden ans4">
-            <p class="answer-text">
-              Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account
-              online in two clicks. There are no cancellation fees – start or stop your account anytime.
-            </p>
-          </div>
+      </div>
+      <div class="faq-card">
+        <div class="question">
+          <p class="question-text">How much does Netflix cost?</p>
+          <p class="faq-plus faq-plus-2">+</p>
         </div>
-        <div class="faq-card">
-          <div class="question">
-            <p class="question-text">What can I watch on Netflix?</p>
-            <p class="faq-plus faq-plus-5">+</p>
-          </div>
-          <div class="answer hidden ans5">
-            <p class="answer-text">
-              Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix
-              originals, and more. Watch as much as you want, anytime you want.
-            </p>
-          </div>
+        <div class="answer hidden ans2">
+          <p class="answer-text">
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly
+            fee. Plans range from Rs 250 to Rs 1,100 a month. No extra costs, no contracts.
+          </p>
         </div>
-        <div class="faq-card">
+      </div>
+      <div class="faq-card">
+        <div class="question">
+          <p class="question-text">Where can I watch?</p>
+          <p class="faq-plus faq-plus-3">+</p>
+        </div>
+        <div class="answer hidden ans3">
+          <p class="answer-text">
+            Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from
+            your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs,
+            smartphones, tablets, streaming media players and game consoles.
+          </p>
+          <p class="answer-text">
+            You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're
+            on the go and without an internet connection. Take Netflix with you anywhere.
+          </p>
+        </div>
+      </div>
+      <div class="faq-card">
+        <div class="question">
+          <p class="question-text">How do I cancel?</p>
+          <p class="faq-plus faq-plus-4">+</p>
+        </div>
+        <div class="answer hidden ans4">
+          <p class="answer-text">
+            Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account
+            online in two clicks. There are no cancellation fees – start or stop your account anytime.
+          </p>
+        </div>
+      </div>
+      <div class="faq-card">
+        <div class="question">
+          <p class="question-text">What can I watch on Netflix?</p>
+          <p class="faq-plus faq-plus-5">+</p>
+        </div>
+        <div class="answer hidden ans5">
+          <p class="answer-text">
+            Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix
+            originals, and more. Watch as much as you want, anytime you want.
+          </p>
+        </div>
+      </div>
+      <div class="faq-card">
         <div class="question">
           <p class="question-text">Is Netflix good for kids?</p>
           <p class="faq-plus faq-plus-6">+</p>
@@ -330,62 +327,56 @@
             kids can watch and block specific titles you don’t want kids to see.
           </p>
         </div>
-      </div>
-    <!-- </div> -->
-    </section>
-    <section class="cta-section">
-      <div class="cta">
-        <p class="cta-text">
-          Ready to watch? Enter your email to create or restart your membership.
-        </p>
-        <form action="" class="cta-form">
-          <input type="email" placeholder="Email address" id="email-input" class="form-input" required />
-          <a href="#" type="submit" class="form-btn"><span>Get Started</span>
-            <ion-icon name="chevron-forward-outline"></ion-icon>
-          </a>
-        </form>
-      </div>
-    </section>
+        <!-- </div> -->
+        <!-- </div> -->
+  </section>
+  <section class="cta-section">
+    <div class="cta">
+      <p class="cta-text">
+        Ready to watch? Enter your email to create or restart your membership.
+      </p>
+      <form action="" class="cta-form">
+        <input type="email" placeholder="Email address" id="email-input" class="form-input" required />
+        <a href="#" type="submit" class="form-btn"><span>Get Started</span>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </a>
+      </form>
+    </div>
+  </section>
   </main>
-  <footer>
-    <footer class="section-footer">
-      <a href="" class="footerq">Questions? Contact us.</a>
-      <div class="footer-grid">
-        <ul class="footer-nav">
-          <li><a href="">FAQ</a></li>
-          <li><a href="">Investor Relations</a></li>
-          <li><a href="">Privacy</a></li>
-          <li><a href="">Speed Test</a></li>
-          <form method="get" action="index.html" id="Language">
-            <select
-              id="Language"
-              class="lang-btn"
-              name="LanguageSelector"
-              onchange="this.form.submit()">
-              <option value="English" class="nav-opt">English</option>
-            </select>
-          </form>
-          <p class="footerName">Netflix Pakistan</p>
-        </ul>
-        <ul class="footer-nav">
-          <li><a href="">Help Center</a></li>
-          <li><a href="">Jobs</a></li>
-          <li><a href="">Cookie Preferences</a></li>
-          <li><a href="">Legal Notices</a></li>
-        </ul>
-        <ul class="footer-nav">
-          <li><a href="">Account</a></li>
-          <li><a href="">Ways to watch</a></li>
-          <li><a href="">Corporate Information</a></li>
-          <li><a href="">Only on Netflix</a></li>
-        </ul>
-        <ul class="footer-nav">
-          <li><a href="">Media Center</a></li>
-          <li><a href="">Terms of use</a></li>
-          <li><a href="">Contact us</a></li>
-        </ul>
-      </div>
-    </footer>
+  <footer class="section-footer">
+    <a href="" class="footerq">Questions? Contact us.</a>
+    <div class="footer-grid">
+      <ul class="footer-nav">
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Investor Relations</a></li>
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Speed Test</a></li>
+        <form method="get" action="index.html" id="Language">
+          <select id="Language" class="lang-btn" name="LanguageSelector" onchange="this.form.submit()">
+            <option value="English" class="nav-opt">English</option>
+          </select>
+        </form>
+        <p class="footerName">Netflix Pakistan</p>
+      </ul>
+      <ul class="footer-nav">
+        <li><a href="">Help Center</a></li>
+        <li><a href="">Jobs</a></li>
+        <li><a href="">Cookie Preferences</a></li>
+        <li><a href="">Legal Notices</a></li>
+      </ul>
+      <ul class="footer-nav">
+        <li><a href="">Account</a></li>
+        <li><a href="">Ways to watch</a></li>
+        <li><a href="">Corporate Information</a></li>
+        <li><a href="">Only on Netflix</a></li>
+      </ul>
+      <ul class="footer-nav">
+        <li><a href="">Media Center</a></li>
+        <li><a href="">Terms of use</a></li>
+        <li><a href="">Contact us</a></li>
+      </ul>
+    </div>
   </footer>
   <script src="assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

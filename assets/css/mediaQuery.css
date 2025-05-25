@@ -1,0 +1,145 @@
+@media (min-width: 400px) {
+}
+@media (min-width: 550px) {
+}
+@media (min-width: 600px) {
+}
+@media (min-width: 769px) {
+  html {
+    font-size: calc(62.5% * 0.6);
+  }
+}
+@media (min-width: 890px) {
+  html {
+    font-size: calc(62.5% * 0.7);
+  }
+  .hero {
+    height: 450px;
+  }
+  .cta-form {
+    width: 80%;
+  }
+  .trending-card {
+    height: 27rem;
+  }
+  .cta .cta-form {
+    min-width: 480px;
+  }
+  .cta .cta-form .form-input {
+    width: 60%;
+  }
+  .cta .cta-form .form-btn {
+    width: 40%;
+  }
+}
+@media (min-width: 960px) {
+  html {
+    font-size: calc(62.5% * 0.8);
+  }
+  .hero {
+    height: 500px;
+  }
+  .cta-form {
+    width: 80%;
+  }
+  .trending-card {
+    height: 30rem;
+  }
+  .cta .cta-form {
+    min-width: 500px;
+  }
+  .cta .cta-form .form-input {
+    width: 60%;
+  }
+  .cta .cta-form .form-btn {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: calc(62.5% * 0.8);
+  }
+  .hero {
+    height: 500px;
+  }
+  .cta-form {
+    width: 75%;
+  }
+  .trending-card {
+    height: 30rem;
+  }
+  .cta .cta-form {
+    min-width: 500px;
+  }
+  .cta .cta-form .form-input {
+    width: 60%;
+  }
+  .cta .cta-form .form-btn {
+    width: 40%;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    height: 560px;
+  }
+  .trending-card {
+    height: 35rem;
+  }
+  .cta .cta-form {
+    min-width: 500px;
+  }
+  .cta .cta-form .form-input {
+    width: 60%;
+  }
+  .cta .cta-form .form-btn {
+    width: 40%;
+  }
+}
+@media (min-width: 1920px) {
+  html {
+    font-size: calc(62.5% * 1.1);
+  }
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  .hero {
+    height: 700px;
+  }
+  .landing-page {
+    background-size: auto 147%;
+  }
+  .hero-content {
+    padding-left: 5rem;
+  }
+  .cta-form {
+    width: 40%;
+  }
+  .hero-text {
+    width: 40%;
+  }
+  .form-input {
+    padding: 1.2rem 1.6rem;
+    min-width: 55%;
+    font-size: 1.6rem;
+  }
+  .form-btn {
+    padding: 1rem 3rem;
+    font-size: 2.2rem;
+  }
+  .trending-slider {
+    width: 80%;
+  }
+  .trending-card {
+    height: 35rem;
+  }
+  .cta .cta-form {
+    min-width: 640px;
+  }
+  .cta .cta-form .form-input {
+    width: 60%;
+  }
+  .cta .cta-form .form-btn {
+    width: 40%;
+  }
+}
